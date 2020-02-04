@@ -37,4 +37,10 @@ export class CourseCardComponent implements OnInit {
       return 'beginner';
     }
   }
+
+  cardStyles() {
+    return {
+      'background-image': 'url(' + this.course.iconUrl + ')'
+    };
+  }
 }
